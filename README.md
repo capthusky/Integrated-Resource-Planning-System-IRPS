@@ -32,10 +32,11 @@
 
 <br>
 
-## This Forked Repo by William Kee has custom docker compose file & bundle apps
-- Now we can pull the repo and start setting up integration app as intended
+## This is a Forked Repo by William Kee comes with custom docker compose file & bundle apps
+- Now you can pull the repo and start setting up integration app as intended
 - No need to pull each repo app one by one with 3-4 seperate containers
 - All in one package ready to link and integrate, ready to run ^^
+- There's also a folder for SHRDC Interns usage, spoiler it contains automation :3
 
 ## For ERPNext User
 
@@ -96,7 +97,7 @@
 2. Navigate to the cloned folder.
     - `cd Integrated-Resource-Planning-System-IRPS`
 
-3. In `enx-example`, you can change the `ERPNEXT_SERVER_PORT` and `MARIADB_SERVER_PORT` variables. Copy environment variables from the `env-example` file into `.env` file.
+3. In `env-example`, you can change the `ERPNEXT_SERVER_PORT` and `MARIADB_SERVER_PORT` variables. Copy environment variables from the `env-example` file into `.env` file.
     - Upon successful setup, you can access ERPNext via port number `ERPNEXT_SERVER_PORT`
     - For Metabase Integration, you would need to connect to Mariadb via `MARIADB_SERVER_PORT`
     - `cp env-example .env`
@@ -117,12 +118,12 @@
     - Password: `admin`
 
 ### 6. Stopping Docker Containers
-1. To stop all the docker containers related to your `<peoject-name`> project
+1. To stop all the docker containers related to your `<project-name>` project
     - In the `Integrated-Resource-Planning-System-IRPS` directory, run `docker-compose -p <project-name> stop`
     - For example, `docker-compose -p project1 stop`
 
 ### 7. Starting Docker Containers
-1. To start up all the docker containers related to your `<peoject-name`> project
+1. To start up all the docker containers related to your `<project-name>` project
     - In the `Integrated-Resource-Planning-System-IRPS` directory, run `docker-compose -p <project-name> start`
     - For example, `docker-compose -p project1 start`
 
