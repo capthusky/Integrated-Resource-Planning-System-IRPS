@@ -32,6 +32,11 @@
 
 <br>
 
+## This Forked Repo by William Kee has custom docker compose file & bundle apps
+- Now we can pull the repo and start setting up integration app as intended
+- No need to pull each repo app one by one with 3-4 seperate containers
+- All in one package ready to link and integrate, ready to run ^^
+
 ## For ERPNext User
 
 ### 1. List of possible ERPNext docker setup
@@ -138,6 +143,7 @@
 2. Alternatives:
     1. [Online Backup (Automatic)](https://docs.google.com/document/d/1nFbnYwB1hkFBeqMrb35IOHjo7M4PF9sRGHR08TtVJ6w/edit?usp=sharing)
     2. [Local Backup (Manual)](https://docs.google.com/document/d/1x_-71FcPrrhF7vvuBX37G0No-TlPxyTQNcQWuN0f8cE/edit?usp=sharing)
+    - This documentation has errors, Do not use _ but use - ! so it's project1-erpnext-python-1
     3. [Local Backup (Automatic)](https://docs.google.com/document/d/1Is8J244t_-t4Ue4bbgPr0Y4P20-0wFKE5IkGEPYU-cE/edit?usp=sharing)
 
 ## Restore

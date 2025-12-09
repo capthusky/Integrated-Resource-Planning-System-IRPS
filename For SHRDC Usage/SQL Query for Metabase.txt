@@ -1,0 +1,71 @@
+Unique Items in Warehouse
+
+SELECT
+    warehouse,
+    COUNT(DISTINCT item_code) AS total_unique_items
+FROM `tabBin`
+GROUP BY warehouse
+ORDER BY total_unique_items DESC;
+
+
+Bar Chart
+
+Sales by Month
+
+SELECT
+  DATE_FORMAT(transaction_date, '%Y-%m') AS month,
+  COUNT(name) AS total_sales_orders
+FROM `tabSales Order`
+GROUP BY DATE_FORMAT(transaction_date, '%Y-%m')
+ORDER BY month;
+
+
+Horizantal Bar Chart
+
+Work Order Status
+
+SELECT
+    status,
+    COUNT(*) AS total
+FROM `tabWork Order`
+GROUP BY status
+ORDER BY total DESC;
+
+
+Pie or Donut Chart
+
+Inventory Balance
+
+SELECT
+    item_code,
+    SUM(actual_qty) AS qty_on_hand
+FROM `tabBin`
+GROUP BY item_code
+ORDER BY qty_on_hand DESC;
+
+
+Line or Area Chart
+
+Top Customer
+
+SELECT
+    si.customer,
+    SUM(si.grand_total) AS total_sales
+FROM `tabSales Invoice` si
+WHERE si.docstatus = 1
+GROUP BY si.customer
+ORDER BY total_sales DESC;
+
+
+Number Chart
+
+Work Order Goal
+
+SELECT
+    (SELECT COUNT(*)
+     FROM `tabWork Order`
+     WHERE status = 'Completed') AS current_value,
+    10 AS target_value;
+
+
+Goal Chart (change the 10 to any target value of your liking)
