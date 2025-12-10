@@ -32,12 +32,6 @@
 
 <br>
 
-## This is a Forked Repo by William Kee comes with custom docker compose file & bundle apps
-- Now you can pull the repo and start setting up integration app as intended
-- No need to pull each repo app one by one with 3-4 seperate containers
-- All in one package ready to link and integrate, ready to run ^^
-- There's also a folder for SHRDC Interns usage, spoiler it contains automation :3
-
 ## For ERPNext User
 
 ### 1. List of possible ERPNext docker setup
